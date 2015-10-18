@@ -1,0 +1,7 @@
+<h1>Home page </h1>
+
+<% @users.each do |user| %>
+
+  <p><%= link_to user.username, user_url(user.id), method: :get %></p>
+
+<% end %>
