@@ -1,3 +1,69 @@
+<body>
+<div id ="header">
 <h1>Welcome, <%= @user.username %></h1>
+</div>
 
-<%= link_to "Logout", "/sessions", method: :delete %>
+<div id = "nav">
+Upload a file<br>
+View files<br>
+Share a file<br>
+Shared with me<br>
+</div>
+
+<div class = "tab">
+<h2>Upload</h2>
+<p>This is where they can browse and upload a file.</p>
+</div>
+
+<div class = "tab">
+<h2>View</h2>
+<p>They can view all the files they have stored.</p>
+</div>
+
+<div class = "tab">
+<h2>Share</h2>
+<p>Share files with others</p>
+</div>
+
+<div class = "tab">
+<h2>Shared with Me</h2>
+<p>Files that have been shared with you</p>
+</div>
+
+<div class = "note">
+<p> Not sure if you want the tool bar and then it renders a new page or have them all in boxes and its interactive without going to a new page?</p>
+</div>
+
+</body>
+
+<style>
+#header{
+	background-color:black;
+	color:white;
+	text-align: center;
+	padding:5px;
+}
+#nav{
+	line-height:30px;
+	background-color: #eeeeee;
+	height: 100px;
+	width: 120px;
+	float: left;
+	padding: 30px;
+}
+.tab{
+	width:300px;
+	float: left;
+	padding:10px;
+}
+.note{
+	width:300px;
+	float: left;
+	padding:10px;
+	color:red;
+}
+</style>
+
+<p style= "float: right;" ><%= link_to "Logout", "/sessions", method: :delete %></p>
+
+	

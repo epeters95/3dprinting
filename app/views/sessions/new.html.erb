@@ -1,3 +1,7 @@
+<div id = "header">
+<h1>3D Printing Encryption </h1>
+</div>
+
 <h1>Log In</h1>
 
 <p style="color: red;"><%= flash[:errors] %></p>
@@ -13,3 +17,13 @@
   <input type="submit">
 
 </form>
+<style>
+#header{
+	background-color: black;
+	color:white;
+	text-align: center;
+	padding: 5px;
+}
+</style>
+
+<p style= "float: left;" ><%= link_to "Home", root_url, method: :get %></p>
