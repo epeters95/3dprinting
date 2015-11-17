@@ -1,69 +1,59 @@
-<body>
-<div id ="header">
-<h1>Welcome, <%= @user.username %></h1>
-</div>
+<head>
+  <title>3DPrinting Encryption</title>
+</head>
 
-<div id = "nav">
-Upload a file<br>
-View files<br>
-Share a file<br>
-Shared with me<br>
-</div>
+<body style= "margin:0px; padding:0px; font-family:'Trebuchet MS', verdana;">
 
-<div class = "tab">
-<h2>Upload</h2>
-<p>This is where they can browse and upload a file.</p>
-</div>
+<table width="100%" style="height: 100%;" cellpadding="10" cellspacing="0" border="0">
+<tr>
 
-<div class = "tab">
-<h2>View</h2>
-<p>They can view all the files they have stored.</p>
-</div>
+  <!-- ========Header Section ============-->
+  <td colspan="3" style ="height:100px;" bgcolor="#777d6a">
+    <h1>Welcome, <%= @user.username %></h1>
 
-<div class = "tab">
-<h2>Share</h2>
-<p>Share files with others</p>
-</div>
+ <tr>
+ <!-- ========Left Column (Menu)=========-->
+ <td width="20%" valign = "top" bgcolor= "#999f8e">
+<p> Upload a file</p>
+<p> View files</p>
+<p> Share a file</p>
+<p> Shared with me</p>
+<p> Friends</p>
+<p><%= link_to "Logout", "/sessions", method: :delete %></p>
+</td>
 
-<div class = "tab">
-<h2>Shared with Me</h2>
-<p>Files that have been shared with you</p>
-</div>
+<!-- ========Middle Column (Content)=========-->
+<td width="55%" valign="top" bgcolor= "#dsd8c7">
+<h2> Upload</h2>
 
-<div class = "note">
-<p> Not sure if you want the tool bar and then it renders a new page or have them all in boxes and its interactive without going to a new page?</p>
-</div>
+<p style="font-size:85%">Upload your file so that it may be secured.</p>
 
+<h2> View Files</h2>
+<p style="font-size:85%; font-family:courier">View previous files that you have uploaded and encrypted.</p>
+
+<h2>Share a file</h2>
+<p style="font-size:85%; font-family:courier">Share your personal files over a secure connection with friends.</p>
+
+<h2>Files shared with me</h2>
+<p style="font-size:85%; font-family:courier">View files that have securely been shared with you.</p>
+
+<h2>Friends</h2>
+<p style="font-size:85%; font-family:courier">View people that you trust to send your files to.</p>
+</td>
+<!-- ========Right Column (Pictures)=========-->
+<td width="25%" valign="top" bgcolor="#999f8e">
+
+<p><img src="https://pbs.twimg.com/profile_images/2260491801/ava_400x400.png"alt ="3d printer" style="width:304px;height:228px;"></p>
+<p> <img src="http://easttec.wpengine.netdna-cdn.com/wp-content/uploads/images/products/invisiblesecrets/features/encrypt.png"alt ="3d printer" style="width:304px;height:228px;"></p> 
+<p><img src="https://cdn2.iconfinder.com/data/icons/seo-web-optimization-ultimate-part1/512/file_sharing-512.png"alt ="3d printer" style="width:304px;height:228px;"></p> ></p>
+</td>
+</tr>
+
+<!-- ========Footer Section=========-->
+<tr><td colspan="3" align="center" height="20" bgcolor="#777d6a">Copyright © The Squad</td></tr>
+<table>
 </body>
 
-<style>
-#header{
-	background-color:black;
-	color:white;
-	text-align: center;
-	padding:5px;
-}
-#nav{
-	line-height:30px;
-	background-color: #eeeeee;
-	height: 100px;
-	width: 120px;
-	float: left;
-	padding: 30px;
-}
-.tab{
-	width:300px;
-	float: left;
-	padding:10px;
-}
-.note{
-	width:300px;
-	float: left;
-	padding:10px;
-	color:red;
-}
-</style>
 
-<p style= "float: right;" ><%= link_to "Logout", "/sessions", method: :delete %></p>
 
 	

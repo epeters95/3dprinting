@@ -1,8 +1,25 @@
-<div id = "header">
-<h1>3D Printing Encryption </h1>
-</div>
+<head>
+  <title>3DPrinting Encryption</title>
+</head>
 
-<h1>Log In</h1>
+<body style= "margin:0px; padding:0px; font-family:'Trebuchet MS', verdana;">
+
+<table width="100%" style="height: 100%;" cellpadding="10" cellspacing="0" border="0">
+<tr>
+
+  <!-- ========Header Section ============-->
+  <td colspan="3" style ="height:100px;" bgcolor="#777d6a">
+    <h1>3D Printing Encryption</h1></td></tr>
+
+ <tr>
+ <!-- ========Left Column (Menu)=========-->
+ <td width="20%" valign = "top" bgcolor= "#999f8e">
+<p style= "float: left;" ><%= link_to "Home", root_url, method: :get %></p>
+</td>
+
+<!-- ========Middle Column (Content)=========-->
+<td width="55%" valign="top" bgcolor= "#dsd8c7">
+<h2> Login</h2>
 
 <p style="color: red;"><%= flash[:errors] %></p>
 
@@ -17,13 +34,21 @@
   <input type="submit">
 
 </form>
-<style>
-#header{
-	background-color: black;
-	color:white;
-	text-align: center;
-	padding: 5px;
-}
-</style>
+<h3>Don't have an account yet? Create one by clicking the link below.</h3>
+<p><%= link_to "Sign Up", "/users/new", method: :get%></p>
+</td>
+<!-- ========Right Column (Pictures)=========-->
+<td width="25%" valign="top" bgcolor="#999f8e">
 
-<p style= "float: left;" ><%= link_to "Home", root_url, method: :get %></p>
+<p><img src="https://pbs.twimg.com/profile_images/2260491801/ava_400x400.png"alt ="3d printer" style="width:304px;height:228px;"></p>
+<p> <img src="http://easttec.wpengine.netdna-cdn.com/wp-content/uploads/images/products/invisiblesecrets/features/encrypt.png"alt ="3d printer" style="width:304px;height:228px;"></p> 
+<p><img src="https://cdn2.iconfinder.com/data/icons/seo-web-optimization-ultimate-part1/512/file_sharing-512.png"alt ="3d printer" style="width:304px;height:228px;"></p> ></p>
+</td>
+</tr>
+
+<!-- ========Footer Section=========-->
+<tr><td colspan="3" align="center" height="20" bgcolor="#777d6a">Copyright © The Squad</td></tr>
+<table>
+</body>
+
+
