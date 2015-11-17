@@ -1,23 +1,41 @@
-<div id = "header">
-<h1>3D Printing Encryption </h1>
-</div>
+<head>
+	<title>3DPrinting Encryption</title>
+</head>
 
+<body style= "margin:0px; padding:0px; font-family:'Trebuchet MS', verdana;">
+
+<table width="100%" style="height: 100%;" cellpadding="10" cellspacing="0" border="0">
+<tr>
+
+  <!-- ========Header Section ============-->
+  <td colspan="3" style ="height:100px;" bgcolor="#777d6a">
+    <h1>3D Printing Encryption</h1></td></tr>
+
+ <tr>
+ <!-- ========Left Column (Menu)=========-->
+ <td width="20%" valign = "top" bgcolor= "#999f8e">
 <p><%= link_to "Sign Up", "/users/new", method: :get%></p>
 <p><%= link_to "Login", "/sessions/new", method: :get%></p>
+</td>
 
-<p><b>Users:</p>
-<% @users.each do |user| %>
+<!-- ========Middle Column (Content)=========-->
+<td width="55%" valign="top" bgcolor= "#dsd8c7">
+<h2> Welcome<//h2>
 
-  <p><%= link_to user.username, user_url(user.id), method: :get %></p>
+<p style="font-size:75%">Get started by creating an account to access and store your 3D printing files. By encrypting your printing blueprints, your files are secure from attacks. You can share them with trusted friends and ensure that your files will stay in your control.</p>
+<p style="font-size:75%; font-family:courier">I dont know what else to do to describe this site but I want more info here. Erik write something. Not sure if I should put picture here or what kind.</p>
+</td>
 
+<!-- ========Right Column (Pictures)=========-->
+<td width="25%" valign="top" bgcolor="#999f8e">
 
+<p> <img src="http://advancedplasmasolutions.com/wp-content/uploads/2015/04/3dprinter.jpg"alt ="3d printer" style="width:304px;height:228px;"></p> 
+<p><img src="http://www.webcircle.co.uk/images/stay-secure-300x180.jpg"alt ="3d printer" style="width:304px;height:228px;"></p>
+<p><img src="http://www.egnyte.com/assets/6/images/intro-file-sharing.png" style="width:400px;height:228px;"></p>
+</td>
+</tr>
 
-<% end %>
-
-<style>
-#header{
-	background-color: black;
-	color:white;
-	text-align: center;
-	padding: 5px;
-}
+<!-- ========Footer Section=========-->
+<tr><td colspan="3" align="center" height="20" bgcolor="#777d6a">Copyright © The Squad</td></tr>
+<table>
+</body>
